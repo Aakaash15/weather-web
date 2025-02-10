@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <p class="col1">A Weather App</p>
+        <p class="col2">Data on 200,000+ cities worldwide</p>
+        <p class="col3"><a href="https://github.com/marisayumg/vanilla-weather-app" target="_blank">Open-source code</a> by MO</p>
+      </div>
+      <div>
+        <form class="search-city" id="search-city">
+          <input
+            type="search"
+            id="search-input"
+            autofocus="on"
+            autocomplete="off"
+            placeholder="Search a city"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="location">
+        <h2 id="city"></h2>
+        <p id="time">Last updated:</p>
+        <p id="date"></p>
+      </div>
+
+      <div class="weather-info">
+        <div class="temperature">
+          <h1 id="number"></h1>
+          <h1>°C</h1>
+           <div class="description">
+          <h1 id="description"></h1>
+        </div>
+        </div>
+        <div class="temperature-details">
+          <img src="" id="weather-icon"></img>
+          <p><strong>Humidity: </strong><span id="humidity">56</span>%</p>
+          <p><strong>Wind: </strong><span id="wind"></span>km/h</p>
+        </div>
+      </div>
+      
+      <div class="col3"></div>
+    </main>
+
+    <footer id="forecast">
+    </footer>
+
+  </body>
+  <script src="src/index.js"></script>
+</html>
